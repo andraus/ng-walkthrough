@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/souly1/ng-walkthrough.svg?branch=master)](https://travis-ci.org/souly1/ng-walkthrough)
+(This is a fork from: https://github.com/souly1/ng-walkthrough)
 
 # ng-walkthrough
 
@@ -140,6 +140,7 @@ and use one of the two configurations:
 - `on-walkthrough-show` (optional) - Any walkthrough type. Bind method to be called when walkthrough is displayed
 - `on-walkthrough-hide` (optional) - Any walkthrough type. Bind method to be called when walkthrough is hidden
 - `on-walkthrough-content-clicked` (optional) - Any walkthrough type. Bind method to be called when walkthrough context or hero image clicked
+- `arrow-mode` (optional) - Arrow drawing mode. Possible values are "FROM_TOP" or "FROM_BOTTOM" (default).
 
 ## Testing
 

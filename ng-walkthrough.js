@@ -71,6 +71,7 @@ angular.module('ng-walkthrough', [])
                     wid: '@?',
                     focusElementSelector: '@?',
                     mainCaption: '@?',
+                    arrowMode: '@?',
                     forceCaptionLocation: '@?',
                     isRound: '=?',
                     hasBackdrop: '=?',
@@ -254,7 +255,7 @@ angular.module('ng-walkthrough', [])
                     var setArrowAndText = function(pointSubjectLeft, pointSubjectTop, pointSubjectWidth, pointSubjectHeight, paddingLeft){
                         var offsetCoordinates = getOffsetCoordinates(scope.walkthroughTextElement);
                         var startLeft = offsetCoordinates.left + offsetCoordinates.width /2;
-                        var startTop = offsetCoordinates.top + offsetCoordinates.height + PADDING_ARROW_START;
+                        var startTop = offsetCoordinates.top + (scope.arrowMode === 'FROM_TOP' ? 0 : offsetCoordinates.height + PADDING_ARROW_START);
 
                         var endLeft = 0;
 
